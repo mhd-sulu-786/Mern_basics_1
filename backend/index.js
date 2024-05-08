@@ -8,15 +8,15 @@ const usermodel = require('./model/usermodel');
 app.use(cors());
 app.use(express.json());
 
-// MONGODB CONNECTING
-// mongoose.connect('mongodb+srv://muhammadsulaimant367:sRoEDatvJY9hXWiz@cluster0.g9par5e.mongodb.net/users', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// }).then(() => {
-//   console.log('mongodb connected with express');
-// }).catch((err) => {
-//   console.log('mongodb connection err:', err.message);
-// });
+MONGODB CONNECTING
+mongoose.connect('mongodb+srv://muhammadsulaimant367:sRoEDatvJY9hXWiz@cluster0.g9par5e.mongodb.net/users', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => {
+  console.log('mongodb connected with express');
+}).catch((err) => {
+  console.log('mongodb connection err:', err.message);
+});
 
 // SHOW DATA OR GETTING WITHOUT ID
 app.get('/getserver', async (req, res) => {
