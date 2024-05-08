@@ -34,6 +34,7 @@ const Login = () => {
     <div className='container-fluid w-100 bg-dark text-white d-flex justfy-content-center align-items-center' style={{ height: '100vh' }}>
       <Container className='col-md-4 bg-white border border-2-primary rounded text-center text-dark p-3'>
         <h2>Login now</h2>
+        <p className='text-danger'> its sample Project not use orginal gmail and Passwrod</p>
         <form onSubmit={formSubmit} className='p-3 d-flex flex-column gap-2'>
           <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} className='me-2 rounded text-center p-2' />
           <input type="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} className='me-2 rounded text-center p-2' />
