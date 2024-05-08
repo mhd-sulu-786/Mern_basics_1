@@ -1,5 +1,5 @@
 {
-  "version":2,
+  "version": 2,
   "builds": [
     {
       "src": "./index.js",
@@ -7,6 +7,10 @@
     }
   ],
   "routes": [
+    {
+      "src": "/getvalues",
+      "dest": "./index.js" // Ensure this path is correct
+    },
     {
       "src": "/(.*)",
       "dest": "./index.js"
