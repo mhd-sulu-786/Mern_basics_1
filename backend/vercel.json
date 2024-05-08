@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 { 
     "version": 2,
  "rewrites": [{ "source": "/(.*)",
@@ -5,3 +6,24 @@
    }
 ] 
 }
+=======
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/getvalues",
+      "dest": "./index.js" // Ensure this path is correct
+    },
+    {
+      "src": "/(.*)",
+      "dest": "./index.js"
+    }
+  ]
+}
+>>>>>>> a4c502a2cd596ed5716293eea7ec3d3b7087004a
